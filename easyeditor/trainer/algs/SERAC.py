@@ -466,6 +466,8 @@ class SERAC_MULTI(EditableModel):
                 self.scale = scale
         if config.model_name == "minigpt4":
             self.language_projection = torch.nn.Linear(self.model.Qformer.config.hidden_size, self.replacement.config.hidden_size)
+            self.first_name = torch.nn.Linear(self.model.Qformer.config.hidden_size, self.replacement.config.hidden_size)
+        
         else:
             self.language_projection = torch.nn.Linear(self.model.Qformer.config.hidden_size, self.replacement.config.hidden_size)
         if cache_inputs is None:
