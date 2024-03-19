@@ -163,6 +163,8 @@ def get_reprs_at_idxs(
 
         if tin:
             _process(tr.input, batch_idxs, "in")
+        if tin:
+            _process(tr.input, batch_idxs, "out")
         if tout:
             _process(tr.output, batch_idxs, "out")
 
