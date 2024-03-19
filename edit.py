@@ -441,7 +441,7 @@ def test_SERAC():
                'Galata is in']
     ground_truth = ['BBC',
                     'politician',
-                    'Antarctica',
+                    'india',
                     'Malaysia',
                     'Istanbul']
     target_new = ['Sega',
